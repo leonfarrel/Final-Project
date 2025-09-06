@@ -56,17 +56,4 @@ jobs:
       with:
         personal_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: reports
-
-    # Install Allure CLI & Generate Allure Report
-    - name: Generate Allure Report
-      run: |
-        npm install -g allure-commandline --save-dev
-        allure generate build/allure-results --clean -o build/allure-report
-
- # Upload Test Report as Artifact
-    - name: Upload Test Report
-      uses: actions/upload-artifact@v4
-      with:
-        name: allure-report
-        path: build/allure-report/
       
