@@ -27,5 +27,5 @@ Feature: Positive API Automation
 
   Scenario: Delete existing user
     Given API is available
-    When delete user with id "60d0fe4f5311236168a109f0"
+    When delete user with id "60d0fe4f5311236168a109f2"
     Then response code should be 200

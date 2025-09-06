@@ -61,7 +61,7 @@ public class SignUpPopUp {
     }
 
     public void input_Username(String username){
-        driver.findElement(usernameTextbox).sendKeys("leontest23"); //Change for test
+        driver.findElement(usernameTextbox).sendKeys("leontest24"); //Change for test
     }
 
     public void input_usedUsername(String username){
