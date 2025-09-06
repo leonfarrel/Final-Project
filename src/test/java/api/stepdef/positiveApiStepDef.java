@@ -41,7 +41,7 @@ public class positiveApiStepDef extends base {
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("firstName", "John");
         requestBody.put("lastName", "Joestar");
-        requestBody.put("email", "jojo102@test.com");
+        requestBody.put("email", "jojo103@test.com");
 
         response = getRequest()
                 .body(requestBody)
@@ -57,7 +57,7 @@ public class positiveApiStepDef extends base {
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("firstName", "Leon");
         requestBody.put("lastName", "Farrel");
-        requestBody.put("email", "leon111@test.com");
+        requestBody.put("email", "leon112@test.com");
 
         response = getRequest()
                 .body(requestBody)

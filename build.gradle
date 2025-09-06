@@ -38,7 +38,7 @@ configurations {
 }
 
 tasks.register('web') {
-    description = "Running Cucumber Test"
+    description = "Running Web Cucumber Test"
     dependsOn assemble, compileTestJava
     doLast {
         javaexec {
@@ -52,6 +52,26 @@ tasks.register('web') {
                     '--glue', 'web_ui/stepdef',
                     '--tags', project.hasProperty('tags') ? project.tags : '',
                     'src/test/resources/web-gherkin'
+            ]
+        }
+    }
+}
+
+tasks.register('api') {
+    description = "Running API Cucumber Test"
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime +
+                    sourceSets.main.output +
+                    sourceSets.test.output
+            args = [
+
+                    '--plugin', 'pretty',
+                    '--glue', 'api/stepdef',
+                    '--tags', project.hasProperty('tags') ? project.tags : '',
+                    'src/test/resources/api-gherkin'
             ]
         }
     }
