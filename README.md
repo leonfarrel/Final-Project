@@ -1,7 +1,10 @@
 # 🚀 Automation Testing Framework
 
-Framework ini dibuat sebagai portofolio automation testing dengan mengkombinasikan API testing dan Web UI testing dalam satu repository.
-Framework menggunakan Java, Gradle, Rest Assured, Selenium, Cucumber, dan GitHub Actions.
+This framework was developed as a portfolio project to demonstrate skills in building a complete automation testing solution by combining API testing and Web UI testing within a single repository. It is implemented using Java, Gradle, Rest Assured, Selenium WebDriver, Cucumber (BDD), and GitHub Actions for CI/CD.
+
+The framework leverages the Behavior Driven Development (BDD) approach with Cucumber (Gherkin format), making test cases more readable, maintainable, and accessible for both technical and non-technical stakeholders. It supports data-driven testing, modular and reusable components, and ensures scalability for larger projects.
+
+Additionally, the project is integrated with GitHub Actions to enable continuous testing in CI/CD pipelines, ensuring automated execution, reporting, and validation of both API and Web UI functionalities. This demonstrates industry best practices in automation testing, framework design, and collaborative software quality assurance.
 
 # 📌 Tools & Libraries
 
